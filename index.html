@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NK's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a6afe8ec82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+<nav>
+<img src="images/logo1.png" class="logo" style="width:350px;">
+<ul id="sidemenu">
+<li><a href="#header">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+</ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+    <div class="header-text">
+<p>Python Full Stack Developer</p>
+        <h1>Hi, I'm <span>Naresh</span> Kumar<br> From India</h1>
+</div>
+</div>
+</div>
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src="images/user.jpg">
+</div>
+<div class="about-col-2">
+<h1 class="sub-title">About Me</h1>
+    <p>A driven and adaptable Python Full Stack Developer with a keen eye for detail and a passion for continuous learning, bringing cutting-edge skills in Python, Django, ML, and full-stack development to drive innovation and deliver exceptional results. Committed to leveraging my technical expertise and problem-solving abilities to contribute significantly to organizational success.</p>
+
+    <div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>Front-End Development</span><br>Proficient in HTML5, CSS3, JavaScript, and Bootstrap for crafting responsive and interactive user interfaces.</li>
+            <li><span>Back-End Development</span><br>Proficient in Python with a strong grasp of Django framework for robust server-side logic.</li>
+            <li><span>Database Management</span><br>Skilled in designing and managing databases using MySQL and utilizing ORM tools.</li>
+            <li><span>Version Control</span><br>Adept in using Git for source code management, ensuring smooth collaboration and version tracking.</li>
+            <li><span>Testing</span><br>Proficient in writing unit tests and using testing frameworks like PyTest to maintain code quality.</li>
+            <li><span>Deployment</span><br>Knowledgeable in deploying applications on cloud platforms like containerization with Docker.</li>
+            <li><span>Problem-Solving</span><br>Strong analytical skills with a knack for solving complex problems efficiently.</li>
+            <li><span>Communication</span><br>Excellent communication skills, capable of explaining technical concepts to non-technical stakeholders.</li>
+        </ul>
+    </div>
+        <div class="tab-contents" id="experience">
+        <ul>
+            <li><span>2023</span><br>Internship at Palle Technologies as Python Full Stack Developer Trainee Engineer</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>2023</span><br>Python Full Stack Development Training at Palle Technologies</li>
+            <li><span>2023</span><br>B.E - CSE from Anna University (DGCT College) with CGPA of 7.9</li>
+            <li><span>2019</span><br>HSC from SSV School with percentage of 68%</li>
+            <li><span>2017</span><br>SSLC from SSV School with percentage of 85%</li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Crafting visually stunning and responsive frontend interfaces using HTML5, CSS3, and Bootstrap, coupled with robust backend solutions powered by Django.</p>
+            <a href="#">Learn more</a>
+            </div>
+            <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Backend Development</h2>
+            <p>Architecting scalable backend solutions with Django and MySQL, ensuring seamless interaction between frontend and backend systems.</p>
+            <a href="#">Learn more</a>
+            </div>
+            <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Data Analysis and Visualization</h2>
+            <p>Extracting valuable insights from data using Python's NumPy, Pandas, and Matplotlib libraries, enabling data-driven decision-making.</p>
+            <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+              <img src="images/Work 1.png">
+              <div class="layer">
+                  <h3>Bus Pass Management System</h3>
+                  <p>Built a web-based Bus Pass Management System allowing user registration, admin authentication, and monthly pass renewal functionalities, developed with HTML, CSS, JavaScript, PHP, and MySQL.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+            <div class="work">
+              <img src="images/Work 2.jpg">
+                <div class="layer">
+                  <h3>Student Management System</h3>
+                  <p>Developed a comprehensive Student Management System facilitating efficient administration of student records, course management, and academic progress tracking.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+            <div class="work">
+              <img src="images/Work 3.jpeg">
+                <div class="layer">
+                  <h3>Customer Care Registry</h3>
+                  <p>Customer Care Registry: A complaint processing application enabling customers to raise detailed tickets, assign agents for issue resolution, and track ticket status, developed with HTML, CSS, JavaScript, Python, Flask, Docker, and Kubernetes.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>nareshkumardevarajt@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>+91-7548850255</p>
+              <div class="social-icons">
+                 <a href="https://www.linkedin.com/in/naresh-kumar-d-328800246"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/nareshkumardevaraj?igsh=MTV4NDg4aGx3b2xuYQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href="https://github.com/Nareshnk1672"><i class="fa-brands fa-square-github"></i></a>
+              </div>
+              <a href="resume/Naresh kumar_python full stack developer.pdf" download class="btn btn2">Download Resume</a>
+          </div>
+          <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                 <input type="text" name="Name" placeholder="Your Name" required>
+                 <input type="email" name="Email" placeholder="Your Email" required>
+                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                 <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+          </div>
+      </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Naresh Kumar. Made with <i class="fa-solid fa-heart"></i> by Nk</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks) {
+             tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyQ6n9ZoSAfPWOmZsf0KnDAAl8LnXzQIsD_eOf1Tx0RPphx2CVKi2mv-Amgu0NlwMmo/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+         msg.innerHTML = 'Message sent successfully'
+         setTimeout(function(){
+            msg.innerHTML = ''
+            },5000)
+            form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body> I
+</html>
